@@ -1,0 +1,74 @@
+# The visual editor's contract for sections/contact-panel.blade.php.
+# Clear a row's address to drop the whole row.
+title: Contact
+description: Three ruled contact rows — the shop, wholesale, and the phone
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Get in touch"
+    heading:
+        type: text
+        label: Heading
+        default: "Who to ask, and about what"
+    body:
+        type: textarea
+        label: Supporting copy
+        rows: 4
+        default: "We read everything, usually within a day. The bar phone is answered between eight and three, and after that it rings in an empty room."
+    oneLabel:
+        type: text
+        label: First row label
+        default: "The shop"
+    oneValue:
+        type: text
+        label: First row address
+        default: "hello@crema.coffee"
+    oneLink:
+        type: url
+        label: First row link
+        default: "mailto:hello@crema.coffee"
+    oneDetail:
+        type: textarea
+        label: First row description
+        rows: 3
+        default: "Lost property, large orders, and anything about a drink you had."
+    twoLabel:
+        type: text
+        label: Second row label
+        default: "Wholesale"
+    twoValue:
+        type: text
+        label: Second row address
+        default: "trade@crema.coffee"
+    twoLink:
+        type: url
+        label: Second row link
+        default: "mailto:trade@crema.coffee"
+    twoDetail:
+        type: textarea
+        label: Second row description
+        rows: 3
+        default: "Cafés, restaurants and offices. We supply within twenty miles."
+    threeLabel:
+        type: text
+        label: Third row label
+        default: "The bar phone"
+    threeValue:
+        type: text
+        label: Third row number
+        default: "0117 555 0148"
+    threeLink:
+        type: url
+        label: Third row link
+        default: "tel:01175550148"
+    threeDetail:
+        type: textarea
+        label: Third row description
+        rows: 3
+        default: "Answered between eight and three, most days."
+    note:
+        type: textarea
+        label: Small print
+        rows: 3
+        default: "We are not hiring right now, but we keep every CV that comes in and we do go back to them."

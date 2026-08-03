@@ -1,0 +1,6 @@
+# Column types for events.json — the What's on rail.
+fields:
+    date: { type: text }
+    time: { type: text }
+    name: { type: text }
+    detail: { type: textarea }

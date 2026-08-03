@@ -1,0 +1,38 @@
+# The visual editor's contract for sections/team.blade.php.
+# The people are the team collection — edit them in the Content drawer.
+title: The team
+description: The people behind the bar, as ruled rows with portraits
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Behind the bar"
+    heading:
+        type: text
+        label: Heading
+        default: "Four people, one roaster, a lot of paper records"
+    team:
+        type: repeater
+        label: People
+        add_button_label: "Add person"
+        item_label: name
+        source: team
+        sub_fields:
+            name:
+                type: text
+                label: Name
+                default: "New person"
+            role:
+                type: text
+                label: Role
+                default: ""
+            bio:
+                type: textarea
+                label: Biography
+                rows: 4
+                default: ""
+            image:
+                type: image
+                label: Portrait
+                description: Leave empty to drop the portrait.
+                default: ""

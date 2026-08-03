@@ -1,0 +1,16 @@
+# The visual editor's contract for sections/coffee-story.blade.php. On a
+# coffee's own page the body is the entry's `content` column — edit it in
+# the Content drawer's rich editor.
+title: Coffee story
+description: The long read, with the heading held in the margin
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "The story"
+    body:
+        type: textarea
+        label: Story
+        description: Rich text — edit this coffee's entry in the Content drawer.
+        rows: 12
+        default: "<p>Write the story of this coffee here — the farm, the season, and why it is on the shelf.</p>"

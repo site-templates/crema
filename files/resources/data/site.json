@@ -1,0 +1,28 @@
+{
+    "name": "Crema",
+    "theme": {
+        "palette": "roast",
+        "fonts": "dm-serif-dm-sans",
+        "fonts_url": "https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap",
+        "appearance": "light",
+        "appearance_class": ""
+    },
+    "nav_links": [
+        { "text": "Menu", "url": "/menu" },
+        { "text": "Coffees", "url": "/coffees" },
+        { "text": "About", "url": "/about" },
+        { "text": "Visit", "url": "/visit" }
+    ],
+    "footer_explore": [
+        { "text": "Today's menu", "url": "/menu" },
+        { "text": "What we're roasting", "url": "/coffees" },
+        { "text": "Our story", "url": "/about" },
+        { "text": "Find us", "url": "/visit" }
+    ],
+    "hours": [
+        { "days": "Monday – Friday", "time": "7:00 – 16:00" },
+        { "days": "Saturday", "time": "8:00 – 17:00" },
+        { "days": "Sunday", "time": "9:00 – 15:00" },
+        { "days": "Bank holidays", "time": "9:00 – 14:00" }
+    ]
+}

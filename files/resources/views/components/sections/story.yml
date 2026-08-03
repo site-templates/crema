@@ -1,0 +1,36 @@
+# The visual editor's contract for sections/story.blade.php.
+title: Story
+description: The long read with a short summary hung beside it
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "How this started"
+    body:
+        type: textarea
+        label: Story
+        description: Accepts HTML — paragraphs, headings, quotes and lists.
+        rows: 14
+        default: "<p>Write the shop's story here.</p>"
+    asideLabel:
+        type: text
+        label: Summary heading
+        default: "In short"
+    asideOne:
+        type: textarea
+        label: First point
+        description: Leave empty to hide.
+        rows: 2
+        default: ""
+    asideTwo:
+        type: textarea
+        label: Second point
+        description: Leave empty to hide.
+        rows: 2
+        default: ""
+    asideThree:
+        type: textarea
+        label: Third point
+        description: Leave empty to hide.
+        rows: 2
+        default: ""

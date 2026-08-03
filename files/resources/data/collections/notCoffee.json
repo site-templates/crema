@@ -1,0 +1,8 @@
+[
+    { "name": "Loose leaf tea", "detail": "Assam, sencha, or peppermint", "price": "3.00" },
+    { "name": "Hot chocolate", "detail": "70% Ecuadorian, whole milk", "price": "3.90" },
+    { "name": "Matcha latte", "detail": "Ceremonial grade, unsweetened", "price": "4.20" },
+    { "name": "Turmeric and ginger", "detail": "Steamed, honey on request", "price": "3.80" },
+    { "name": "Sparkling water", "detail": "Local, refillable bottle", "price": "1.80" },
+    { "name": "Orange juice", "detail": "Pressed each morning", "price": "3.20" }
+]

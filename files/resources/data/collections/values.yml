@@ -1,0 +1,4 @@
+# Column types for values.json — how we buy, roast, and label.
+fields:
+    title: { type: text }
+    body: { type: textarea }

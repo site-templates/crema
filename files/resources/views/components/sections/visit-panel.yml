@@ -1,0 +1,85 @@
+# The visual editor's contract for sections/visit-panel.blade.php.
+# The hours list lives in site.json so the footer and this panel agree.
+title: Visit panel
+description: Hours and directions beside a corner map drawn in CSS
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Find us"
+    heading:
+        type: text
+        label: Heading
+        default: "On the corner of Ashfield and Vine"
+    body:
+        type: textarea
+        label: Supporting copy
+        rows: 4
+        default: "Two minutes down from the station, opposite the launderette. Eighteen seats inside, four on the pavement when the weather allows, and a bike rack by the door."
+    address:
+        type: text
+        label: Street
+        default: "114 Ashfield Road"
+    city:
+        type: text
+        label: Town and postcode
+        default: "Bristol BS6 5NX"
+    hoursHeading:
+        type: text
+        label: Hours heading
+        default: "Opening hours"
+    transitLabel:
+        type: text
+        label: Directions heading
+        default: "Getting here"
+    transitOne:
+        type: text
+        label: First direction
+        description: Leave empty to hide.
+        default: "Montpelier station — 4 minutes on foot"
+    transitTwo:
+        type: text
+        label: Second direction
+        description: Leave empty to hide.
+        default: "Buses 5, 15 and 72 stop on Cheltenham Road"
+    transitThree:
+        type: text
+        label: Third direction
+        description: Leave empty to hide.
+        default: "Two hours free parking on Vine Street"
+    mapLabel:
+        type: text
+        label: Map marker
+        default: "Ashfield & Vine"
+    streetOne:
+        type: text
+        label: Horizontal street name
+        default: "Ashfield Road"
+    streetTwo:
+        type: text
+        label: Vertical street name
+        default: "Vine Street"
+    linkText:
+        type: text
+        label: Map link text
+        description: Leave empty to hide the link.
+        default: "Open in maps"
+    linkHref:
+        type: url
+        label: Map link
+        default: "https://maps.google.com"
+    hours:
+        type: repeater
+        label: Opening hours
+        add_button_label: "Add row"
+        item_label: days
+        source: site.hours
+        sub_fields:
+            days:
+                type: text
+                label: Days
+                default: "Monday"
+            time:
+                type: text
+                label: Hours
+                default: "8 – 4"

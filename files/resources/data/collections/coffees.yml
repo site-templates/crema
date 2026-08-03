@@ -1,0 +1,26 @@
+# Column types for coffees.json — the source of truth the builder reads:
+# richtext columns open in the rich editor (the Content drawer and any
+# section repeater listing this collection). One entry here becomes one
+# page at /coffee/{slug} via pages/coffee/[coffees.slug].blade.php.
+fields:
+    name: { type: text }
+    slug: { type: text }
+    link: { type: url }
+    kind: { type: text }
+    origin: { type: text }
+    producer: { type: text }
+    region: { type: text }
+    altitude: { type: text }
+    process: { type: text }
+    varietal: { type: text }
+    roastLevel: { type: number }
+    roastLabel: { type: text }
+    notes: { type: text }
+    description: { type: textarea }
+    price: { type: text }
+    bagSize: { type: text }
+    brewMethod: { type: text }
+    brewDose: { type: text }
+    brewTime: { type: text }
+    brewTemp: { type: text }
+    content: { type: richtext }

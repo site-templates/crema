@@ -1,0 +1,16 @@
+{
+    "name": "Crema",
+    "dialect": "blade",
+    "description": "A specialty coffee roaster and neighbourhood bar, built around a hand-set counter board and structured single-origin pages.",
+    "icon": "☕️",
+    "repo": "https://github.com/site-templates/crema",
+    "order": 22,
+    "category": "business",
+    "theme": "light",
+    "accent": "#8f4a24",
+    "themeable": true,
+    "palette": "roast",
+    "fonts": "dm-serif-dm-sans",
+    "appearance": "light",
+    "pages": ["Home", "Menu", "Coffees", "Coffee detail", "About", "Visit"]
+}

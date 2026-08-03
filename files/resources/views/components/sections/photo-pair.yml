@@ -1,0 +1,30 @@
+# The visual editor's contract for sections/photo-pair.blade.php.
+title: Photograph pair
+description: Two frames at different heights, the second running off the edge
+fields:
+    imageOne:
+        type: image
+        label: Left photograph
+        description: Leave empty to drop the frame.
+        default: "/images/roastery.jpg"
+    imageOneAlt:
+        type: text
+        label: Left photograph description
+        default: "The drum roaster mid-batch, cooling tray out"
+    captionOne:
+        type: text
+        label: Left caption
+        default: "The 12kg drum, Monday morning."
+    imageTwo:
+        type: image
+        label: Right photograph
+        description: Leave empty to drop the frame.
+        default: "/images/counter.jpg"
+    imageTwoAlt:
+        type: text
+        label: Right photograph description
+        default: "The counter from the doorway, cups stacked on the machine"
+    captionTwo:
+        type: text
+        label: Right caption
+        default: "Eighteen seats, four more outside when it is dry."

@@ -1,0 +1,50 @@
+# The visual editor's contract for sections/hero.blade.php.
+title: Hero
+description: The full-bleed opening — photograph, headline, and today's hours
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Roastery & coffee bar · Bristol"
+    heading:
+        type: text
+        label: Headline
+        default: "The corner shop that roasts its own"
+    body:
+        type: textarea
+        label: Supporting copy
+        rows: 4
+        default: "Twelve kilos at a time, twice a week, on a drum we can hear from the bar. Whatever is in your cup was green nine days ago and we can tell you whose farm it came from."
+    image:
+        type: image
+        label: Background photograph
+        description: Leave empty for a plain ink background.
+        default: "/images/room.jpg"
+    imageAlt:
+        type: text
+        label: Photograph description
+        default: "The coffee bar in the late afternoon, sun across the counter"
+    primaryText:
+        type: text
+        label: Main button
+        default: "See what we're pouring"
+    primaryLink:
+        type: url
+        label: Main button link
+        default: "/menu"
+    secondaryText:
+        type: text
+        label: Second button
+        default: "Find the shop"
+    secondaryLink:
+        type: url
+        label: Second button link
+        default: "/visit"
+    statusLabel:
+        type: text
+        label: Hours label
+        default: "Open today"
+    statusValue:
+        type: text
+        label: Hours
+        default: "7:00 – 16:00"

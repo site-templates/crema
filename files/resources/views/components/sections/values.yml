@@ -1,0 +1,29 @@
+# The visual editor's contract for sections/values.blade.php.
+# The rules are the values collection — edit them in the Content drawer.
+title: How we work
+description: Numbered rules on the inverted surface
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "How we work"
+    heading:
+        type: text
+        label: Heading
+        default: "Three things we will not budge on"
+    values:
+        type: repeater
+        label: Rules
+        add_button_label: "Add rule"
+        item_label: title
+        source: values
+        sub_fields:
+            title:
+                type: text
+                label: Title
+                default: "New rule"
+            body:
+                type: textarea
+                label: Description
+                rows: 4
+                default: ""

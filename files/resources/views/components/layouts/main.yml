@@ -1,0 +1,23 @@
+# The visual editor's contract for layouts/main.blade.php.
+title: Page layout
+description: The document shell — title, description, and how the bar sits over the page
+fields:
+    title:
+        type: text
+        label: Page title
+        description: Shown in the browser tab, before the site name.
+        default: "Home"
+    description:
+        type: textarea
+        label: Meta description
+        description: The one-line summary search engines show.
+        rows: 3
+        default: ""
+    navStyle:
+        type: select
+        label: Header style
+        description: Overlay lets a full-bleed photograph run under a transparent bar.
+        options:
+            solid: On the page background
+            overlay: Transparent over the hero
+        default: "solid"

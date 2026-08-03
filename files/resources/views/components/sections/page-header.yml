@@ -1,0 +1,23 @@
+# The visual editor's contract for sections/page-header.blade.php.
+title: Page header
+description: The interior page opening — title with a standfirst beside it
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Crema"
+    heading:
+        type: text
+        label: Title
+        default: "Page title"
+    body:
+        type: textarea
+        label: Standfirst
+        description: Leave empty to hide.
+        rows: 4
+        default: ""
+    meta:
+        type: text
+        label: Small note
+        description: Leave empty to hide.
+        default: ""

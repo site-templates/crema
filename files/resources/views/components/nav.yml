@@ -1,0 +1,40 @@
+# The visual editor's contract for nav.blade.php. The menu itself is the
+# nav_links list in resources/data/site.json, so every page shares one menu.
+title: Header
+description: The site bar — mark, wordmark, menu, and the ordering button
+fields:
+    brand:
+        type: text
+        label: Wordmark
+        default: "Crema"
+    ctaText:
+        type: text
+        label: Button label
+        default: "Order ahead"
+    ctaLink:
+        type: url
+        label: Button link
+        default: "/visit"
+    variant:
+        type: select
+        label: Bar style
+        description: Overlay starts transparent over a full-bleed hero photograph.
+        options:
+            solid: On the page background
+            overlay: Transparent over the hero
+        default: "solid"
+    links:
+        type: repeater
+        label: Menu links
+        add_button_label: "Add link"
+        item_label: text
+        source: site.nav_links
+        sub_fields:
+            text:
+                type: text
+                label: Label
+                default: "New link"
+            url:
+                type: url
+                label: Link
+                default: "/"

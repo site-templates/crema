@@ -1,0 +1,8 @@
+[
+    { "name": "Batch brew", "detail": "Kirundo, Burundi — redcurrant, brown sugar", "price": "3.20" },
+    { "name": "V60", "detail": "Brewed to order, ask what's open", "price": "4.40" },
+    { "name": "Aeropress", "detail": "Gatare, Rwanda — rhubarb, cocoa nib", "price": "4.20" },
+    { "name": "Cold brew", "detail": "Eighteen hours, served black", "price": "3.80" },
+    { "name": "Cold brew tonic", "detail": "With orange and a lot of ice", "price": "4.60" },
+    { "name": "Filter refill", "detail": "Same day, same cup", "price": "1.50" }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "date": "Every Thursday",
+        "time": "18:00",
+        "name": "Cupping table",
+        "detail": "Six coffees, blind, no jargon required. Free, twelve seats, first come."
+    },
+    {
+        "date": "First Saturday",
+        "time": "10:00",
+        "name": "Brew class",
+        "detail": "Two hours on V60 and Aeropress. £35 including a bag to take home."
+    },
+    {
+        "date": "14 March",
+        "time": "19:30",
+        "name": "Harvest supper",
+        "detail": "One long table, four courses, coffee from Óscar and Marta's farm. £48."
+    },
+    {
+        "date": "Last Sunday",
+        "time": "11:00",
+        "name": "Roastery tour",
+        "detail": "Behind the roller door: green store, drum roaster, and the sample table."
+    }
+]

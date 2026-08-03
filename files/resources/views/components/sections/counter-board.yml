@@ -1,0 +1,97 @@
+# The visual editor's contract for sections/counter-board.blade.php.
+# The two lists are the espresso and filter collections — edit the rows in
+# the Content drawer and every surface that shows them follows.
+title: Counter board
+description: The signature — the board behind the till, set in type
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Today at the bar"
+    heading:
+        type: text
+        label: Heading
+        default: "The board"
+    statusText:
+        type: text
+        label: Status chip
+        default: "Pour-over until 15:30"
+    espressoHeading:
+        type: text
+        label: Left column heading
+        default: "Espresso"
+    filterHeading:
+        type: text
+        label: Right column heading
+        default: "Filter & brew"
+    todayLabel:
+        type: text
+        label: Card label
+        default: "On filter today"
+    todayName:
+        type: text
+        label: Coffee name
+        default: "Kirundo"
+    todayOrigin:
+        type: text
+        label: Farm and origin
+        default: "Nkonge Hill · Kayanza, Burundi"
+    todayNotes:
+        type: text
+        label: Tasting notes
+        default: "Redcurrant, brown sugar, orange peel"
+    todayProcess:
+        type: text
+        label: Process and altitude
+        default: "Washed Red Bourbon, 1,750 m"
+    todayLinkText:
+        type: text
+        label: Card link text
+        default: "Read about this coffee"
+    todayLink:
+        type: url
+        label: Card link
+        default: "/coffee/kirundo"
+    footnote:
+        type: textarea
+        label: Small print
+        rows: 2
+        default: "Prices in pounds. Oat, soy and whole milk cost the same, and a filter refill is half price on the same day."
+    espresso:
+        type: repeater
+        label: Espresso list
+        add_button_label: "Add drink"
+        item_label: name
+        source: espresso
+        sub_fields:
+            name:
+                type: text
+                label: Drink
+                default: "New drink"
+            detail:
+                type: text
+                label: Description
+                default: ""
+            price:
+                type: text
+                label: Price
+                default: "0.00"
+    filter:
+        type: repeater
+        label: Filter list
+        add_button_label: "Add brew"
+        item_label: name
+        source: filter
+        sub_fields:
+            name:
+                type: text
+                label: Brew
+                default: "New brew"
+            detail:
+                type: text
+                label: Description
+                default: ""
+            price:
+                type: text
+                label: Price
+                default: "0.00"

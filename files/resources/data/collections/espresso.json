@@ -1,0 +1,10 @@
+[
+    { "name": "Espresso", "detail": "Corner Blend, 18g in, 40g out", "price": "2.60" },
+    { "name": "Macchiato", "detail": "A thumb of milk, nothing more", "price": "2.90" },
+    { "name": "Cortado", "detail": "Equal parts, in glass", "price": "3.20" },
+    { "name": "Flat white", "detail": "Double shot, 6oz", "price": "3.60" },
+    { "name": "Latte", "detail": "8oz, or 12oz if you're staying", "price": "3.80" },
+    { "name": "Cappuccino", "detail": "Properly dry, no cocoa unless asked", "price": "3.60" },
+    { "name": "Iced latte", "detail": "Over a tall glass of ice", "price": "3.90" },
+    { "name": "Single origin espresso", "detail": "Whatever's on the second grinder", "price": "3.40" }
+]

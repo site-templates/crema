@@ -1,0 +1,5 @@
+# Column types for the menu list the builder edits in the Content drawer.
+fields:
+    name: { type: text }
+    detail: { type: text }
+    price: { type: text }

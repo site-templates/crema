@@ -1,0 +1,101 @@
+# The visual editor's contract for sections/coffee-spec.blade.php. On a
+# coffee's own page every value comes from its entry in the coffees
+# collection. Leave a row empty to drop it from the table.
+title: Coffee details
+description: The farm as a ruled table beside the brew recipe
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "The details"
+    producerLabel:
+        type: text
+        label: Producer label
+        default: "Producer"
+    producer:
+        type: textarea
+        label: Producer
+        description: Leave empty to hide this row.
+        rows: 2
+        default: ""
+    regionLabel:
+        type: text
+        label: Region label
+        default: "Region"
+    region:
+        type: text
+        label: Region
+        description: Leave empty to hide this row.
+        default: ""
+    altitudeLabel:
+        type: text
+        label: Altitude label
+        default: "Altitude"
+    altitude:
+        type: text
+        label: Altitude
+        description: Leave empty to hide this row.
+        default: ""
+    processLabel:
+        type: text
+        label: Process label
+        default: "Process"
+    process:
+        type: text
+        label: Process
+        description: Leave empty to hide this row.
+        default: ""
+    varietalLabel:
+        type: text
+        label: Varietal label
+        default: "Varietal"
+    varietal:
+        type: text
+        label: Varietal
+        description: Leave empty to hide this row.
+        default: ""
+    brewHeading:
+        type: text
+        label: Brew card heading
+        default: "How we brew it"
+    brewMethodLabel:
+        type: text
+        label: Method label
+        default: "Method"
+    brewMethod:
+        type: text
+        label: Method
+        description: Leave empty to hide this row.
+        default: ""
+    brewDoseLabel:
+        type: text
+        label: Recipe label
+        default: "Recipe"
+    brewDose:
+        type: text
+        label: Recipe
+        description: Leave empty to hide this row.
+        default: ""
+    brewTimeLabel:
+        type: text
+        label: Time label
+        default: "Time"
+    brewTime:
+        type: text
+        label: Time
+        description: Leave empty to hide this row.
+        default: ""
+    brewTempLabel:
+        type: text
+        label: Water label
+        default: "Water"
+    brewTemp:
+        type: text
+        label: Water temperature
+        description: Leave empty to hide this row.
+        default: ""
+    brewNote:
+        type: textarea
+        label: Brew note
+        rows: 3
+        default: "These are the numbers we use on the bar. Treat them as a starting point and adjust the grind first."

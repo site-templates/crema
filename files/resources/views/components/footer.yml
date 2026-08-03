@@ -1,0 +1,76 @@
+# The visual editor's contract for footer.blade.php. Both lists live in
+# resources/data/site.json so the footer and the Visit page never disagree.
+title: Footer
+description: Address, opening hours, and the explore links
+fields:
+    brand:
+        type: text
+        label: Wordmark
+        default: "Crema"
+    blurb:
+        type: textarea
+        label: Blurb
+        rows: 4
+        default: "A small roastery and coffee bar on the corner of Ashfield and Vine. We roast on Mondays and Thursdays, and we pull shots until the pastries run out."
+    address:
+        type: text
+        label: Street
+        default: "114 Ashfield Road"
+    city:
+        type: text
+        label: Town and postcode
+        default: "Bristol BS6 5NX"
+    phone:
+        type: text
+        label: Phone
+        default: "0117 555 0148"
+    email:
+        type: text
+        label: Email
+        default: "hello@crema.coffee"
+    instagram:
+        type: url
+        label: Instagram
+        default: "https://instagram.com"
+    exploreHeading:
+        type: text
+        label: Links heading
+        default: "Explore"
+    hoursHeading:
+        type: text
+        label: Hours heading
+        default: "Hours"
+    note:
+        type: text
+        label: Small print
+        default: "Roasted and poured on the corner since 2016."
+    explore:
+        type: repeater
+        label: Explore links
+        add_button_label: "Add link"
+        item_label: text
+        source: site.footer_explore
+        sub_fields:
+            text:
+                type: text
+                label: Label
+                default: "New link"
+            url:
+                type: url
+                label: Link
+                default: "/"
+    hours:
+        type: repeater
+        label: Opening hours
+        add_button_label: "Add row"
+        item_label: days
+        source: site.hours
+        sub_fields:
+            days:
+                type: text
+                label: Days
+                default: "Monday"
+            time:
+                type: text
+                label: Hours
+                default: "8 – 4"

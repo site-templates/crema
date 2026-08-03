@@ -1,0 +1,29 @@
+# The visual editor's contract for sections/cta.blade.php.
+title: Closing note
+description: The one centred section — the mark, a line, and two buttons
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Come and stand at the bar"
+    body:
+        type: textarea
+        label: Supporting copy
+        rows: 3
+        default: "No booking, no minimum spend, no laptops after eleven on Saturdays. Just tell us whether you want it with milk."
+    primaryText:
+        type: text
+        label: Main button
+        default: "See the full menu"
+    primaryLink:
+        type: url
+        label: Main button link
+        default: "/menu"
+    secondaryText:
+        type: text
+        label: Second button
+        default: "Get directions"
+    secondaryLink:
+        type: url
+        label: Second button link
+        default: "/visit"

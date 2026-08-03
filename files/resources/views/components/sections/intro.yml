@@ -1,0 +1,41 @@
+# The visual editor's contract for sections/intro.blade.php.
+title: Intro
+description: The editorial strip — a short lede beside a pull quote
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Since 2016"
+    heading:
+        type: text
+        label: Heading
+        default: "We buy the coffee, we roast the coffee, we make you the coffee"
+    body:
+        type: textarea
+        label: First paragraph
+        rows: 4
+        default: "There is no importer between us and the farm, and no third party between the roastery and the bar. It means we answer for everything in the cup, which is uncomfortable often enough to keep us honest."
+    bodyTwo:
+        type: textarea
+        label: Second paragraph
+        description: Leave empty to keep it to one.
+        rows: 4
+        default: "Noor buys twice a year and goes to see the farms she buys from. Tomás roasts on Mondays and Thursdays and writes every batch down on paper. Priya sets the grind each morning before the doors open."
+    quote:
+        type: textarea
+        label: Pull quote
+        rows: 3
+        default: "If we cannot tell you whose farm it came from, we did not buy it."
+    quoteAttribution:
+        type: text
+        label: Quote attribution
+        default: "Noor Haddad, founder"
+    linkText:
+        type: text
+        label: Link text
+        description: Leave empty to hide the link.
+        default: "How we work"
+    linkHref:
+        type: url
+        label: Link
+        default: "/about"

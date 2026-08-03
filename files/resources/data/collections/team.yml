@@ -1,0 +1,8 @@
+# Column types for team.json — the people behind the bar. Leave `image`
+# empty and the monogram in `initials` is drawn instead.
+fields:
+    name: { type: text }
+    role: { type: text }
+    bio: { type: textarea }
+    initials: { type: text }
+    image: { type: image }

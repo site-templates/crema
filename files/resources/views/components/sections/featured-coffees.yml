@@ -1,0 +1,89 @@
+# The visual editor's contract for sections/featured-coffees.blade.php.
+# The cards come from the coffees collection — the section shows the first
+# three, so reorder the collection to change which ones appear here.
+title: Featured coffees
+description: One wide bag label and a pair beneath, from the coffees collection
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "On the shelf"
+    heading:
+        type: text
+        label: Heading
+        default: "What we are roasting right now"
+    body:
+        type: textarea
+        label: Supporting copy
+        rows: 3
+        default: "Three of the five coffees currently in the green store. Everything is roasted to order twice a week and stamped with the date it came off the drum."
+    linkText:
+        type: text
+        label: Link text
+        description: Leave empty to hide the link.
+        default: "All five coffees"
+    linkHref:
+        type: url
+        label: Link
+        default: "/coffees"
+    coffees:
+        type: repeater
+        label: Coffees
+        add_button_label: "Add coffee"
+        item_label: name
+        source: coffees
+        sub_fields:
+            name:
+                type: text
+                label: Name
+                default: "New coffee"
+            slug:
+                type: text
+                label: URL slug
+                description: The address of its page — /coffee/{slug}.
+                default: "new-coffee"
+            link:
+                type: url
+                label: Page link
+                default: "/coffees"
+            kind:
+                type: text
+                label: Category
+                default: "Single origin filter"
+            origin:
+                type: text
+                label: Origin
+                default: ""
+            process:
+                type: text
+                label: Process
+                default: ""
+            roastLevel:
+                type: number
+                label: Roast level
+                description: 1 is the lightest, 5 the darkest.
+                min: 1
+                max: 5
+                step: 1
+                default: "3"
+            roastLabel:
+                type: text
+                label: Roast name
+                default: "Medium"
+            notes:
+                type: text
+                label: Tasting notes
+                default: ""
+            description:
+                type: textarea
+                label: Short description
+                rows: 3
+                default: ""
+            price:
+                type: text
+                label: Price
+                default: ""
+            bagSize:
+                type: text
+                label: Bag size
+                default: "250g"

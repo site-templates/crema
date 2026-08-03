@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Noor Haddad",
+        "role": "Founder, green buying",
+        "bio": "Spent six years on the import side before deciding she would rather know the farms than the spreadsheets. Buys everything we roast.",
+        "image": "",
+        "initials": "NH"
+    },
+    {
+        "name": "Tomás Bissett",
+        "role": "Head roaster",
+        "bio": "Runs the 12kg drum on Mondays and Thursdays. Keeps a paper log of every batch since 2018 and will show you it if you ask.",
+        "image": "",
+        "initials": "TB"
+    },
+    {
+        "name": "Priya Raman",
+        "role": "Bar lead",
+        "bio": "Sets the dial-in every morning and trains everyone who stands behind the machine. Responsible for the cardamom buns being on Fridays.",
+        "image": "",
+        "initials": "PR"
+    },
+    {
+        "name": "Eli Fournier",
+        "role": "Kitchen",
+        "bio": "Came for a two-week cover shift in 2021. Makes the galette that changes weekly and refuses to write the recipe down.",
+        "image": "",
+        "initials": "EF"
+    }
+]

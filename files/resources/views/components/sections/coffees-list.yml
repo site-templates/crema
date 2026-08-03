@@ -1,0 +1,95 @@
+# The visual editor's contract for sections/coffees-list.blade.php.
+# The rows are the coffees collection — add an entry there and it appears
+# here and at its own page, /coffee/{slug}.
+title: Coffee list
+description: Every coffee as a ruled row — the roaster's sheet
+fields:
+    originHeading:
+        type: text
+        label: First column heading
+        default: "Origin"
+    processHeading:
+        type: text
+        label: Second column heading
+        default: "Process"
+    roastHeading:
+        type: text
+        label: Third column heading
+        default: "Roast"
+    priceHeading:
+        type: text
+        label: Price column heading
+        default: "Per 250g"
+    footnote:
+        type: textarea
+        label: Small print
+        rows: 3
+        default: "Everything is roasted to order on Mondays and Thursdays and stamped with the date. Subscriptions run fortnightly — ask at the bar."
+    coffees:
+        type: repeater
+        label: Coffees
+        add_button_label: "Add coffee"
+        item_label: name
+        source: coffees
+        sub_fields:
+            name:
+                type: text
+                label: Name
+                default: "New coffee"
+            slug:
+                type: text
+                label: URL slug
+                description: The address of its page — /coffee/{slug}.
+                default: "new-coffee"
+            link:
+                type: url
+                label: Page link
+                default: "/coffees"
+            kind:
+                type: text
+                label: Category
+                default: "Single origin filter"
+            origin:
+                type: text
+                label: Country
+                default: ""
+            region:
+                type: text
+                label: Region
+                default: ""
+            process:
+                type: text
+                label: Process
+                default: ""
+            varietal:
+                type: text
+                label: Varietal
+                default: ""
+            altitude:
+                type: text
+                label: Altitude
+                default: ""
+            roastLevel:
+                type: number
+                label: Roast level
+                description: 1 is the lightest, 5 the darkest.
+                min: 1
+                max: 5
+                step: 1
+                default: "3"
+            roastLabel:
+                type: text
+                label: Roast name
+                default: "Medium"
+            notes:
+                type: text
+                label: Tasting notes
+                default: ""
+            price:
+                type: text
+                label: Price
+                default: ""
+            bagSize:
+                type: text
+                label: Bag size
+                default: "250g"

@@ -1,0 +1,59 @@
+# The visual editor's contract for sections/more-coffees.blade.php. The
+# rows are the coffees collection; the coffee whose page this is gets
+# skipped by matching `current` against each entry's slug.
+title: More coffees
+description: The rest of the shelf, as ruled rows
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Also on the shelf"
+    linkText:
+        type: text
+        label: Link text
+        description: Leave empty to hide the link.
+        default: "See all five"
+    linkHref:
+        type: url
+        label: Link
+        default: "/coffees"
+    current:
+        type: text
+        label: Skip this slug
+        description: The coffee to leave out — normally the one this page is about.
+        default: ""
+    entries:
+        type: repeater
+        label: Coffees
+        add_button_label: "Add coffee"
+        item_label: name
+        source: coffees
+        sub_fields:
+            name:
+                type: text
+                label: Name
+                default: "New coffee"
+            slug:
+                type: text
+                label: URL slug
+                default: "new-coffee"
+            link:
+                type: url
+                label: Page link
+                default: "/coffees"
+            kind:
+                type: text
+                label: Category
+                default: "Single origin filter"
+            origin:
+                type: text
+                label: Country
+                default: ""
+            process:
+                type: text
+                label: Process
+                default: ""
+            notes:
+                type: text
+                label: Tasting notes
+                default: ""

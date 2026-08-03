@@ -1,0 +1,42 @@
+# The visual editor's contract for sections/events.blade.php.
+# The rows are the events collection — edit them in the Content drawer.
+title: What's on
+description: The diary — a ruled rail of cuppings, classes and suppers
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "What's on"
+    heading:
+        type: text
+        label: Heading
+        default: "Things that happen here when the bar is quiet"
+    footnote:
+        type: textarea
+        label: Small print
+        rows: 3
+        default: "Sign up on the clipboard by the till, or send us an email. Everything except the supper is walk-in if there is room."
+    events:
+        type: repeater
+        label: Events
+        add_button_label: "Add event"
+        item_label: name
+        source: events
+        sub_fields:
+            date:
+                type: text
+                label: Date
+                default: "Every Thursday"
+            time:
+                type: text
+                label: Time
+                default: "18:00"
+            name:
+                type: text
+                label: Name
+                default: "New event"
+            detail:
+                type: textarea
+                label: Description
+                rows: 3
+                default: ""

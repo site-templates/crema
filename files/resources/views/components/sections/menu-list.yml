@@ -1,0 +1,53 @@
+# The visual editor's contract for sections/menu-list.blade.php. Each
+# instance shows one collection — the page passes it in, so edit the rows in
+# the Content drawer under that collection's name.
+title: Menu course
+description: One course — heading in the margin, dot-leader rows beside it
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Espresso"
+    body:
+        type: textarea
+        label: Description
+        description: Leave empty to hide.
+        rows: 3
+        default: ""
+    note:
+        type: textarea
+        label: Small note
+        description: Leave empty to hide.
+        rows: 3
+        default: ""
+    tone:
+        type: select
+        label: Background
+        description: Alternate courses so the page keeps its rhythm.
+        options:
+            plain: Page background
+            raised: Tinted surface
+        default: "plain"
+    anchor:
+        type: text
+        label: Anchor
+        description: The id you can link straight to, as /menu#espresso.
+        default: "course"
+    items:
+        type: repeater
+        label: Items
+        add_button_label: "Add item"
+        item_label: name
+        sub_fields:
+            name:
+                type: text
+                label: Item
+                default: "New item"
+            detail:
+                type: text
+                label: Description
+                default: ""
+            price:
+                type: text
+                label: Price
+                default: "0.00"

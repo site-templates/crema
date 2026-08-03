@@ -1,0 +1,63 @@
+# The visual editor's contract for sections/coffee-hero.blade.php. On a
+# coffee's own page these values come from its entry in the coffees
+# collection — edit them there and both the list and the page follow.
+title: Coffee header
+description: The tasting notes as the headline, with origin, roast and price
+fields:
+    kind:
+        type: text
+        label: Category
+        default: "Single origin filter"
+    name:
+        type: text
+        label: Name
+        default: "Coffee"
+    notes:
+        type: textarea
+        label: Tasting notes
+        rows: 2
+        default: ""
+    origin:
+        type: text
+        label: Country
+        default: ""
+    region:
+        type: text
+        label: Region
+        default: ""
+    price:
+        type: text
+        label: Price
+        default: ""
+    bagSize:
+        type: text
+        label: Bag size
+        default: "250g"
+    roastLevel:
+        type: number
+        label: Roast level
+        description: 1 is the lightest, 5 the darkest.
+        min: 1
+        max: 5
+        step: 1
+        default: "3"
+    roastLabel:
+        type: text
+        label: Roast name
+        default: "Medium"
+    backText:
+        type: text
+        label: Back link text
+        default: "All coffees"
+    backLink:
+        type: url
+        label: Back link
+        default: "/coffees"
+    originLabel:
+        type: text
+        label: Origin label
+        default: "Grown"
+    roastSuffix:
+        type: text
+        label: Roast label suffix
+        default: "roast"
