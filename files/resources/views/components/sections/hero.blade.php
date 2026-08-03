@@ -23,8 +23,14 @@
     <img src="{{ $image }}" alt="{{ $imageAlt }}" class="absolute inset-0 -z-10 size-full object-cover" width="2400" height="1600">
     @endif
 
-    <!-- The scrim keeps the type legible whatever the photograph is doing. -->
-    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-board via-board/70 to-board/25" aria-hidden="true"></div>
+    <!--
+        Two scrims, so the section survives whatever photograph is dropped in.
+        The first carries the headline; the second is a short wash under the
+        transparent bar, whose type is white and would otherwise disappear
+        against a bright ceiling or window.
+    -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-board via-board/75 to-board/35" aria-hidden="true"></div>
+    <div class="absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-board/75 to-transparent" aria-hidden="true"></div>
 
     <div class="mx-auto w-full max-w-6xl px-6 pt-32 pb-14 sm:pb-20">
         <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
