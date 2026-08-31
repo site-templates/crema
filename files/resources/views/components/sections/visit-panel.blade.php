@@ -70,7 +70,7 @@
                 </div>
 
                 @if ($linkText)
-                <a href="{{ $linkHref }}" class="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-ink underline decoration-accent decoration-2 underline-offset-4 transition-colors duration-200 hover:text-accent-text">
+                <a href="{{ $linkHref }}" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-ink underline decoration-accent decoration-2 underline-offset-4 transition-colors duration-200 hover:text-accent-text">
                     {{ $linkText }}
                     <svg viewBox="0 0 16 16" class="size-3.5 fill-current" aria-hidden="true"><path d="M6.2 3.3 10.9 8l-4.7 4.7-1.1-1.1L8.7 8 5.1 4.4z"/></svg>
                 </a>
