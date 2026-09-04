@@ -22,13 +22,13 @@
     <script>document.documentElement.classList.add('js')</script>
     <script src="/js/main.js" defer></script>
 </head>
-<body class="min-h-dvh bg-canvas font-sans text-ink antialiased">
+<body data-instant-navigation class="min-h-dvh bg-canvas font-sans text-ink antialiased">
 
     <!-- The site-wide bar. Its links live in resources/data/site.json (nav_links). -->
     <x-nav :links="$site->nav_links" :variant="$navStyle"/>
 
-    <!-- Pages that open with photography run under the bar on purpose (navStyle="overlay"). -->
-    <main class="relative">
+    <!-- Pages that open with photography run under the bar on purpose (navStyle="overlay"). The nav style rides on <main> too, so main.js can carry it onto the persistent header after an instant navigation. -->
+    <main class="relative" data-nav="{{ $navStyle }}">
         {{ $slot }}
     </main>
 
